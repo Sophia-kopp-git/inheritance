@@ -10,5 +10,20 @@ public class Main {
         System.out.println(vehicle.toString());
         System.out.println(car.toString());
         System.out.println(motorcycle.getType());
+
+        //static
+        StaticExcercise staticEx = new StaticExcercise();
+
+        System.out.println("instance:" + staticEx.incrementInstanceCount());
+        System.out.println("static count" + StaticExcercise.incrementTotalCount());
+
+        System.out.println(Calculator.add(2, 3));
+
+        //interface
+        VideoPlayer video = new VideoPlayer();
+        MusicPlayer music = new MusicPlayer();
+        MediaController mediaCtlr = new MediaController();
+        System.out.println("video: " + mediaCtlr.playMedia(video));
+        System.out.println("music: " + mediaCtlr.playMedia(music));
     }
 }
